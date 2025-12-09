@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="updateCPIAnchorPane" prefHeight="563.0" prefWidth="805.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.DOCPISceneController">
+   <children>
+      <Label layoutX="240.0" layoutY="14.0" text="CPI (Corruption Perceptions Index)" textAlignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <VBox layoutX="232.0" layoutY="176.0" spacing="10" />
+      <Label fx:id="confirmationLabel" layoutX="240.0" layoutY="300.0" text="" />
+      <TextField fx:id="enterCountryTextField" layoutX="37.0" layoutY="88.0" prefHeight="31.0" prefWidth="197.0" promptText="Enter Country" />
+      <TextField fx:id="enterCPIIndexTextField" layoutX="460.0" layoutY="88.0" prefHeight="31.0" prefWidth="184.0" promptText="Enter CPI Index Value" />
+      <TextField fx:id="enterYearTextField" layoutX="260.0" layoutY="88.0" prefHeight="31.0" prefWidth="184.0" promptText="Enter year" />
+      <Button layoutX="655.0" layoutY="88.0" mnemonicParsing="false" onAction="#updateCPIButtonOnClick" prefHeight="31.0" prefWidth="119.0" text="Update CPI" />
+      <TableView fx:id="cpiIndexTableView" layoutX="67.0" layoutY="140.0" prefHeight="318.0" prefWidth="691.0">
+        <columns>
+          <TableColumn fx:id="countryTableColoumn" prefWidth="203.0" text="Country" />
+          <TableColumn fx:id="yearTableColoumn" prefWidth="228.0" text="Year" />
+            <TableColumn fx:id="cpiTableColoumn" prefWidth="254.0" text="CPI Index" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

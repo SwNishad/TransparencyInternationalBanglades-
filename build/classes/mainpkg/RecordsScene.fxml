@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="563.0" prefWidth="805.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.RecordsSceneController">
+   <children>
+      <TableView fx:id="infractionsTableView" layoutX="66.0" layoutY="98.0" onMouseClicked="#viewInfractionMOUSECLICK" prefHeight="347.0" prefWidth="684.0">
+        <columns>
+          <TableColumn fx:id="infractionIDCOLUMN" prefWidth="136.0" text="InfractionID" />
+          <TableColumn fx:id="infractionOffenderCOLUMN" prefWidth="203.0" text="Offender" />
+            <TableColumn fx:id="infractionAmountChargedCOLUMN" prefWidth="183.0" text="Charged Amount" />
+            <TableColumn fx:id="infractionDateCOLUMN" prefWidth="161.0" text="Date" />
+        </columns>
+      </TableView>
+      <Label layoutX="66.0" layoutY="32.0" prefHeight="45.0" prefWidth="277.0" text="Infraction Records">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Button layoutX="659.0" layoutY="502.0" mnemonicParsing="false" onAction="#viewOnClick" text="Load" />
+   </children>
+</AnchorPane>

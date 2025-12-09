@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="563.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.RecordKeeperDashController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu fx:id="recordkeepermenufile" mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#CorruptionReportsOnClick" text="Corruption Reports" />
+            </items>
+          </Menu>
+          <Menu fx:id="recordkeeperstatsmenufile" mnemonicParsing="false" text="Statistics">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#analysisonCLICK" text="View Analysis" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <left>
+      <AnchorPane prefHeight="531.0" prefWidth="200.0" style="-fx-background-color: #0388fc;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="75.0" fitWidth="165.0" layoutX="13.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/CompanyLogo.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="16.0" layoutY="461.0" mnemonicParsing="false" onAction="#RKSignOutButtonOnClick" prefHeight="39.0" prefWidth="163.0" style="-fx-background-color: teal; -fx-border-color: white; -fx-text-fill: white;" text="Sign Out" />
+            <Button layoutX="16.0" layoutY="171.0" mnemonicParsing="false" onAction="#InfractionButtonOnClick" prefHeight="40.0" prefWidth="163.0" style="-fx-background-color: none; -fx-border-color: white; -fx-text-fill: white;" text="Record Keeping" />
+            <Button layoutX="16.0" layoutY="217.0" mnemonicParsing="false" onAction="#RKPolicyButtonOnClick" prefHeight="40.0" prefWidth="163.0" style="-fx-background-color: none; -fx-border-color: white; -fx-text-fill: white;" text="Policies" />
+            <Button layoutX="16.0" layoutY="263.0" mnemonicParsing="false" onAction="#CompMeetingOnclick" prefHeight="40.0" prefWidth="163.0" style="-fx-background-color: none; -fx-border-color: white; -fx-text-fill: white;" text="Company Meeting" />
+            <Button layoutX="16.0" layoutY="309.0" mnemonicParsing="false" onAction="#DataReqButtonOnClick" prefHeight="40.0" prefWidth="163.0" style="-fx-background-color: none; -fx-border-color: white; -fx-text-fill: white;" text="Data Requests" />
+            <Button layoutX="16.0" layoutY="356.0" mnemonicParsing="false" onAction="#LeaveOfAbsenceonclick" prefHeight="40.0" prefWidth="163.0" style="-fx-background-color: none; -fx-border-color: white; -fx-text-fill: white;" text="Leave Of Absence" />
+         </children>
+      </AnchorPane>
+   </left>
+</BorderPane>

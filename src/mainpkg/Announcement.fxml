@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="562.0" prefWidth="804.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.AnnouncementController">
+   <children>
+      <Label layoutX="88.0" layoutY="66.0" text="Announcement: ">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="announcementViewTXTAREA" layoutX="88.0" layoutY="134.0" onMouseClicked="#viewAnnouncementOnClick" prefHeight="378.0" prefWidth="637.0" />
+   </children>
+</AnchorPane>

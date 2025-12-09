@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="563.0" prefWidth="805.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="mainpkg.PressConferenceController">
+   <children>
+      <Label layoutX="77.0" layoutY="44.0" text="Press Conference">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <TableView fx:id="pressConferenceTABLEVIEW" layoutX="77.0" layoutY="104.0" onMouseClicked="#showPressSchedule" prefHeight="384.0" prefWidth="650.0">
+        <columns>
+          <TableColumn fx:id="pressDateColumn" prefWidth="163.0" text="Date" />
+          <TableColumn fx:id="pressTimeColumn" minWidth="4.0" prefWidth="120.0" text="Time" />
+            <TableColumn fx:id="pressVenueColumn" minWidth="4.0" prefWidth="169.0" text="Venue" />
+            <TableColumn fx:id="pressAgendaColumn" minWidth="4.0" prefWidth="197.0" text="Agenda" />
+        </columns>
+      </TableView>
+      <Button layoutX="662.0" layoutY="506.0" mnemonicParsing="false" onAction="#editPCONCLICK" text="Edit" />
+   </children>
+</AnchorPane>

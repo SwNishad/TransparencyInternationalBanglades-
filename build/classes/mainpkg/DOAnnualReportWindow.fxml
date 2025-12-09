@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="694.0" prefWidth="1077.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.DOAnnualReportWindowController">
+   <children>
+      <PieChart fx:id="incidentCountPieChart" layoutX="651.0" layoutY="110.0" prefHeight="264.0" prefWidth="392.0" style="-fx-background-color: silver;" title="Annual Incidents Overview" />
+      <BarChart fx:id="eventsCountBarChart" layoutX="30.0" layoutY="135.0" prefHeight="393.0" prefWidth="563.0" title="Annual Event Count Analysis">
+        <xAxis>
+          <CategoryAxis prefHeight="45.0" prefWidth="502.0" side="BOTTOM" fx:id="xAxis" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis fx:id="yAxis" side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <LineChart fx:id="countryCountLineChart" layoutX="604.0" layoutY="391.0" prefHeight="264.0" prefWidth="439.0" title="Countries worked wiith ">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </LineChart>
+      <Button layoutX="62.0" layoutY="571.0" mnemonicParsing="false" onAction="#generateChartsOnClick" prefHeight="31.0" prefWidth="176.0" text="Generate Summary" wrapText="true" />
+      <Label layoutX="45.0" layoutY="54.0" text="Annual Report Summary">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

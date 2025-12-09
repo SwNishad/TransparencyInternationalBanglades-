@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="563.0" prefWidth="805.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.CollaborateSceneController">
+   <children>
+      <Label layoutX="21.0" layoutY="25.0" text="Collaborate with TIB Research Network">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="347.0" layoutY="354.0" mnemonicParsing="false" onAction="#sendRequestButtonOnClick" prefHeight="35.0" prefWidth="112.0" text="Send Request" textFill="#2acd45">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="41.0" layoutY="144.0" text="Enter Name">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nameTextField" layoutX="176.0" layoutY="140.0" prefHeight="25.0" prefWidth="267.0" />
+      <Label layoutX="42.0" layoutY="188.0" text="Enter Topic">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="topicTextField" layoutX="176.0" layoutY="182.0" prefHeight="25.0" prefWidth="409.0" />
+      <Label layoutX="21.0" layoutY="231.0" text="Enter Date Of Project">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="DOPDatePicker" layoutX="176.0" layoutY="228.0" prefHeight="25.0" prefWidth="211.0" />
+      <TextField fx:id="enterIDTextField" layoutX="26.0" layoutY="426.0" promptText="Enter Request ID" />
+      <Button layoutX="37.0" layoutY="467.0" mnemonicParsing="false" onAction="#checkReqButtonOnClick" text="Check Request Status" />
+   </children>
+</AnchorPane>

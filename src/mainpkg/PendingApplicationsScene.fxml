@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="563.0" prefWidth="805.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.PendingApplicationsSceneController">
+   <children>
+      <Label layoutX="66.0" layoutY="40.0" prefHeight="45.0" prefWidth="303.0" text="Pending Requests">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Button layoutX="249.0" layoutY="456.0" mnemonicParsing="false" onAction="#approveRequestButtonOnClick" text="Approve" textFill="#51d33d">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <TextField fx:id="requestIDToApproveTextField" layoutX="66.0" layoutY="456.0" promptText="Request ID" />
+      <TableView fx:id="pendingRequestsTableView" layoutX="66.0" layoutY="96.0" prefHeight="349.0" prefWidth="697.0">
+        <columns>
+          <TableColumn fx:id="requestIDTableColumn" prefWidth="98.0" text="Request ID" />
+          <TableColumn fx:id="requestContentTableColumn" prefWidth="598.0" text="Message" />
+        </columns>
+      </TableView>
+      <Button layoutX="653.0" layoutY="456.0" mnemonicParsing="false" onAction="#loadTableButtonOnClick" text="Load Requests" />
+   </children>
+</AnchorPane>

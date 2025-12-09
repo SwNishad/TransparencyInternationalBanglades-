@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="ReportIncidentAnchorPane" prefHeight="563.0" prefWidth="805.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.ReportIncidentController">
+   <children>
+      <Label layoutX="27.0" layoutY="44.0" prefHeight="28.0" prefWidth="480.0" text="Importance of Reporting Workplace Incidents!!!" textFill="#c61010">
+         <font>
+            <Font name="Corbel Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="230.0" layoutY="282.0" text="Fill up the following form to report an incident" textAlignment="CENTER">
+         <font>
+            <Font name="Candara Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="DOIdatePicker" layoutX="37.0" layoutY="324.0" prefHeight="31.0" prefWidth="214.0" promptText="Date of Incident" />
+      <TextField fx:id="TimeOfIncidentTExtFied" layoutX="37.0" layoutY="375.0" prefHeight="31.0" prefWidth="214.0" promptText="Time of incident" />
+      <TextField fx:id="involvedPartiesTextField" layoutX="37.0" layoutY="424.0" prefHeight="61.0" prefWidth="214.0" promptText="Involved Parties" />
+      <TextArea fx:id="descriptionTextArea" layoutX="290.0" layoutY="324.0" prefHeight="165.0" prefWidth="480.0" promptText="Description" />
+      <Label layoutX="331.0" layoutY="72.0" prefHeight="200.0" prefWidth="449.0" text="Reporting workplace incidents is vital for safety, compliance, and proactive risk management. It enables timely corrective actions, safeguards employees, and enhances overall work environment security." textAlignment="JUSTIFY" wrapText="true">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <TextArea editable="false" layoutX="14.0" layoutY="96.0" prefHeight="176.0" prefWidth="303.0" text="-Promotes Safety Culture&#10;-Prevention of Recurrence&#10;-Legal and Regulatory Compliance&#10;-Employee Protection&#10;-Data for Improvement&#10;-Risk Management">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextArea>
+      <Button layoutX="230.0" layoutY="497.0" mnemonicParsing="false" onAction="#savePrintReportButtonOnClick" prefHeight="52.0" prefWidth="214.0" text="Save &amp; Print Report" />
+   </children>
+</AnchorPane>

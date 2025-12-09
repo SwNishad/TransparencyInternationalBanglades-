@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="calculateTaxAnchorPane" prefHeight="563.0" prefWidth="805.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.DOCalculateTaxSceneController">
+   <children>
+      <Label layoutX="54.0" layoutY="21.0" prefHeight="71.0" prefWidth="187.0" text="Calculate Tax">
+         <font>
+            <Font name="Calibri Bold Italic" size="32.0" />
+         </font>
+      </Label>
+      <Label layoutX="69.0" layoutY="148.0" prefHeight="23.0" prefWidth="164.0" text="Asset/Inventory Value">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="assetValueTextField" layoutX="233.0" layoutY="144.0" prefHeight="31.0" prefWidth="170.0" />
+      <TextField fx:id="deductionTextField" layoutX="583.0" layoutY="144.0" prefHeight="31.0" prefWidth="146.0" />
+      <Label layoutX="311.0" layoutY="302.0" text="Payable Tax Amout">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="showPayableTaxTextArea" editable="false" layoutX="79.0" layoutY="340.0" prefHeight="182.0" prefWidth="659.0">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </TextArea>
+      <Button layoutX="328.0" layoutY="222.0" mnemonicParsing="false" onAction="#calculateTaxButtonOnClick" prefHeight="31.0" prefWidth="170.0" text="Calculate Tax" />
+      <Label layoutX="425.0" layoutY="149.0" text="Standard Deduction ">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="selectTaxType" layoutX="319.0" layoutY="92.0" prefHeight="31.0" prefWidth="170.0" promptText="Select Tax Type" />
+   </children>
+</AnchorPane>

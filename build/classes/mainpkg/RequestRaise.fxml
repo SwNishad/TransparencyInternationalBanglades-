@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="RaiseAnchor" prefHeight="563.0" prefWidth="805.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.RequestRaiseController">
+   <children>
+      <Line endX="664.0" layoutX="115.0" layoutY="61.0" startX="-100.0" />
+      <TextField fx:id="remarksTextArea" layoutX="33.0" layoutY="146.0" prefHeight="145.0" prefWidth="395.0" promptText="Remarks" />
+      <Label layoutX="51.0" layoutY="351.0">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Button layoutX="291.0" layoutY="92.0" mnemonicParsing="false" onAction="#submitRequestButtonOnClick" prefHeight="38.0" prefWidth="137.0" text="Submit Request" textAlignment="CENTER" wrapText="true" />
+      <Label layoutX="311.0" layoutY="34.0" text="Request Raise">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="raisePercentComboBox" layoutX="33.0" layoutY="92.0" prefHeight="38.0" prefWidth="168.0" promptText="Raise %" />
+      <TextArea fx:id="detailsTextArea" layoutX="455.0" layoutY="93.0" prefHeight="198.0" prefWidth="310.0" />
+      <TextField fx:id="requestIDTextField" layoutX="33.0" layoutY="348.0" promptText="Request ID" />
+      <Button layoutX="33.0" layoutY="395.0" mnemonicParsing="false" onAction="#checkRequestStatusButtonOnClick" prefHeight="31.0" prefWidth="187.0" text="Check Status" />
+      <Line endX="664.0" layoutX="115.0" layoutY="322.0" startX="-100.0" />
+   </children>
+</AnchorPane>

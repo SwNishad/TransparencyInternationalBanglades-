@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="563.0" prefWidth="805.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.EmployeeAddWindowController">
+   <children>
+      <Label layoutX="54.0" layoutY="51.0" prefHeight="45.0" prefWidth="277.0" text="Add Employee">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="56.0" layoutY="149.0" text="Employee Name:">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="userNameTextField" layoutX="212.0" layoutY="146.0" />
+      <Label layoutX="56.0" layoutY="208.0" text="Default Password:">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="userPasswordTextField" layoutX="212.0" layoutY="205.0" />
+      <Label layoutX="439.0" layoutY="147.0" text="Salary:">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="439.0" layoutY="259.0" text="Designation:">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="439.0" layoutY="202.0" text="Date of Joining:">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="dojDatePicker" layoutX="595.0" layoutY="199.0" prefHeight="30.0" prefWidth="176.0" />
+      <ComboBox fx:id="userDesignationComboBox" layoutX="595.0" layoutY="259.0" prefHeight="30.0" prefWidth="175.0" promptText="Select Designation" />
+      <Label layoutX="88.0" layoutY="452.0" text="Full-Time Employee">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="employeeSalaryTextField" layoutX="595.0" layoutY="148.0" />
+      <Button layoutX="644.0" layoutY="447.0" mnemonicParsing="false" onAction="#confirmAddEmployeeButtonOnClick" prefHeight="34.0" prefWidth="125.0" text="Confirm" />
+      <CheckBox fx:id="employeeFullTimeCheckbox" layoutX="56.0" layoutY="454.0" mnemonicParsing="false" />
+   </children>
+</AnchorPane>

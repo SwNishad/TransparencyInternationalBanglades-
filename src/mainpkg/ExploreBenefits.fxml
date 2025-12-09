@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" fx:id="employeeBenefitsAnchoPane" prefHeight="563.0" prefWidth="805.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.ExploreBenefitsController">
+   <children>
+      <TextArea fx:id="emloyeeBenefitsDetailsTextArea" editable="false" layoutX="34.0" layoutY="169.0" prefHeight="343.0" prefWidth="747.0" />
+      <Label layoutX="302.0" layoutY="21.0" text="Explore Employee Beifits " />
+      <ComboBox fx:id="workDurationComboBox" layoutX="97.0" layoutY="79.0" prefHeight="67.0" prefWidth="226.0" promptText="Choose work duration" />
+      <Button layoutX="385.0" layoutY="86.0" mnemonicParsing="false" onAction="#viewBenifitsButtonOnClick" prefHeight="53.0" prefWidth="226.0" text="View benifits" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="563.0" prefWidth="805.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.GPViewPublicWorkshopSceneController">
+   <children>
+      <Label layoutX="66.0" layoutY="32.0" prefHeight="45.0" prefWidth="570.0" text="TIB Endorsed Public Workshops">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <TableView fx:id="publicWorkshopTable" layoutX="66.0" layoutY="97.0" prefHeight="315.0" prefWidth="695.0">
+        <columns>
+          <TableColumn fx:id="workshopIDColumn" prefWidth="126.0" text="ID" />
+          <TableColumn fx:id="workshopAgendaColumn" prefWidth="212.0" text="Agenda" />
+            <TableColumn fx:id="workshopSpeakerColumn" prefWidth="230.0" text="Speaker" />
+            <TableColumn fx:id="workshopDateColumn" prefWidth="135.0" text="Date" />
+        </columns>
+      </TableView>
+      <TextField fx:id="eventIDTextField" layoutX="457.0" layoutY="470.0" promptText="Event ID" />
+      <Button layoutX="643.0" layoutY="470.0" mnemonicParsing="false" onAction="#printEventPassButtonOnClick" text="Print Event Pass" />
+   </children>
+</AnchorPane>

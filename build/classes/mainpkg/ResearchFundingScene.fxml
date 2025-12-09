@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="563.0" prefWidth="805.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.ResearchFundingSceneController">
+   <children>
+      <Label layoutX="21.0" layoutY="21.0" text="Request Funding">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="21.0" layoutY="80.0" text="Enter Amount Requested per day:">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="dayTextField" layoutX="21.0" layoutY="107.0" />
+      <Label layoutX="23.0" layoutY="233.0" text="Funding Required for:">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="contentTextField" layoutX="22.0" layoutY="257.0" prefHeight="72.0" prefWidth="380.0" />
+      <Label layoutX="21.0" layoutY="148.0" text="Choose How Many Days:">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="dayComboBox" layoutX="21.0" layoutY="169.0" prefHeight="30.0" prefWidth="175.0" />
+      <TextArea fx:id="detailsTextArea" layoutX="502.0" layoutY="91.0" prefHeight="421.0" prefWidth="267.0" wrapText="true" />
+      <Label layoutX="588.0" layoutY="61.0" text="Request Details">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Button layoutX="221.0" layoutY="167.0" mnemonicParsing="false" onAction="#calculateButtonOnClick" prefHeight="35.0" prefWidth="81.0" text="Calculate" />
+      <Label fx:id="statusTextLabel" layoutX="21.0" layoutY="372.0" text="Request Status:">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Button layoutX="228.0" layoutY="449.0" mnemonicParsing="false" onAction="#submitButtonOnClick" prefHeight="35.0" prefWidth="81.0" text="Submit" />
+   </children>
+</AnchorPane>
